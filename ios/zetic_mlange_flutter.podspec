@@ -4,7 +4,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'zetic_mlange_flutter'
-  s.version          = '0.0.1'
+  s.version          = '1.2.0'
   s.summary          = 'A new Flutter plugin project.'
   s.description      = <<-DESC
 A new Flutter plugin project.
@@ -48,7 +48,7 @@ A new Flutter plugin project.
   curl -fL "${DOWNLOAD_URL}" -o "${FRAMEWORK_DIR}/${FRAMEWORK_NAME}.xcframework.zip"
   unzip -q "${FRAMEWORK_DIR}/${FRAMEWORK_NAME}.xcframework.zip" -d "${FRAMEWORK_DIR}/"
   rm "${FRAMEWORK_DIR}/${FRAMEWORK_NAME}.xcframework.zip"
-
+  
   # Verify
   if [ -d "${FRAMEWORK_PATH}" ]; then
     echo "✅ Framework installed successfully at: ${FRAMEWORK_PATH}"
