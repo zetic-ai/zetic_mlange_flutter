@@ -38,11 +38,6 @@ A new Flutter plugin project.
   rm -rf "${FRAMEWORK_PATH}" "${FRAMEWORK_DIR}/${FRAMEWORK_NAME}.xcframework.zip"
   mkdir -p "${FRAMEWORK_DIR}"
 
-  # Create log file
-  LOG_FILE="zeticmlange_installation.log"
-  if [ -d ${LOG_FILE} ]; then
-    rm ${LOG_FILE}
-  fi
   # Download and extract
   echo "⬇️  Downloading from: ${DOWNLOAD_URL}"
   curl -fL "${DOWNLOAD_URL}" -o "${FRAMEWORK_DIR}/${FRAMEWORK_NAME}.xcframework.zip"
